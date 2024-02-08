@@ -6,7 +6,7 @@ this_dir = os.path.dirname(os.path.realpath(__file__))
 
 GIT_KEY=""
 
-with open(this_dir + "/repo_keys.txt") as f:
+with open(this_dir + "/repo_keys_sample.txt") as f:
 	for line in f:
 		tups=line.strip().split("=")
 		if tups[0] == "GIT_KEY":
